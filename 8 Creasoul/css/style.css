@@ -1,0 +1,149 @@
+
+* {
+	box-sizing: border-box;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.clear {
+	clear: both;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #6a6d70;
+	background-color: #F2F1F4;
+}
+a {
+	text-decoration: none;
+}
+/*font-family: 'PT Sans Narrow', sans-serif;*/
+/*#30A894*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*ICI LE HEADER !!!*/
+header nav {
+	margin: auto;
+	text-align: center;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #fff;
+}
+header nav ul {
+	background-color: #01AC97;
+}
+header nav ul li {
+	padding: 30px 0;_
+}
+@media all and (min-width: 560px) {
+	header nav ul li {
+		display: inline-block;
+		padding: 30px 60px;
+	}	
+}
+header nav ul li a{
+	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*CECI EST LE MAIN !!!*/
+
+main section {
+	padding-bottom:40px;
+}
+main section h1 {
+	background-color: #30A894;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #fff;
+	padding: 20px 10px;
+	margin: 40px 0;
+}
+main section p {
+	text-align: left;
+	margin: 40px 0;
+	word-spacing: 5px;
+	padding: 0 10px 0 10px;
+}
+main aside {
+	padding: 40px;
+	background-color: #B7DCB1;
+}
+main aside article h2 {
+	background-color: #30A894;
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: #fff;
+	padding: 20px 10px;
+}
+main aside article p {
+	padding: 20px 0;
+}
+@media all and (min-width: 960px) {
+	header, main {
+	max-width: 80%;
+	margin: auto;
+	}
+	main {
+		padding: 0;
+		position: relative;
+	}
+	main section {
+		float: left;
+		width: 65%;
+		padding: 30px 30px 30px 0;
+	}
+	main aside {
+		float:right;
+		width: 35%;
+		vertical-align: top;
+	}
+	main aside article {
+		text-align: justify;
+		line-height: 20px;
+	}
+	header nav img {
+	animation-name: animNav;
+	animation-duration: 10s;
+	animation-iteration-count:1;
+	}
+	main aside{
+		position: absolute;
+		animation-name: animAside;
+		animation-delay: 0s;
+		animation-duration: 4s;
+		animation-iteration-count: 1;
+		right: 0;
+		top: 0;
+	}
+}
+
+@keyframes animNav{
+	0% {
+		transform: translateX(500%);
+	}
+	25% {
+		transform: translateX(-400%);
+	}
+	80% {
+		transform: translateX(0%);
+	}
+	90% {
+		transform: rotateX(360deg);
+	}
+}
+@keyframes animAside {
+	0% {
+		height: 0px;
+		opacity: 0;
+	}
+	100% {
+		height: 1080px;
+		opacity: 1;
+	}
+}

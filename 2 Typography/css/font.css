@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'specialselite';
+	src: url('../fonts/SpecialElite.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'cardo';
+	src: url("../fonts/cardo/cardo-regular.woff") format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'cardo';
+	src: url("../fonts/cardo/cardo-italic.woff") format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'cardo';
+	src: url("../fonts/cardo/cardo-bold.woff") format('woff');
+	font-weight: bold;
+	font-style: normal;
+}

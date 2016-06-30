@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Open Sans", Arial;
+}
+h1, h2, h3 {
+	font-family: "Courgette", cursive;
+	color: #49c2b3;
+}
+a {
+	text-decoration: none;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/*CECI EST LE HEADER*/
+header {
+	background-color: white;
+	max-width: 80%;
+	margin: auto;
+	}
+
+header nav {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	}
+
+header ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 0px 20px;
+	font-size: 1.7rem;
+	color: #49c2b3;
+	font-style: italic;
+
+	}
+header ul li a {
+	color: #49c2b3;
+	font-family: "Courgette", cursive;
+	font-size: 1em;
+	transition: font-size 1s ease 1s;
+	transition: color 4s ease 0;
+	}
+nav ul {
+	float:right;
+	margin: 0;
+	padding: 20px 0px 0px 0px;
+}
+ul li i.fa {
+		display: block;
+		color: #49c2b3;
+	}
+
+
+
+/*CECI EST LE MAIN */
+
+#intro {
+	background-image: url("../img/fond.jpg");
+	width: 100%;
+	text-align: center;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 200px 0;
+
+}
+#intro > div {
+	background-color: rgba(73, 195, 180, 0.75);
+	margin: 0;
+	font-size: 1.3em;
+	padding: 20px 0;
+}
+div h1, h2 {
+	color: white;
+	font-weight: 500;
+}
+h2 {
+font-size: 1em;
+padding-top: 10px;
+font-weight: 400;
+}
+.promo {
+	background-color: rgb(73, 195, 180);
+	color: white;
+	padding: 12px 0;
+	margin: 0;
+	text-align: center;
+}
+article {
+	text-align: left;
+	width: 80%;
+	margin: auto;
+	color: #474444;
+}
+main section {
+	background-color: #B7B12E;
+	padding: 35px 0;
+}
+main section article {
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+}
+main article img {
+	width: 30%;
+	height: auto;
+}
+section article p {
+	color: white;
+	margin: auto;
+	width: 80%;
+	padding-top: 30px;
+	text-align: justify;
+}
+
+
+/*CECI EST LE FOOTER */
+footer .promo {
+	background-color: rgb(73, 195, 180);
+	color: white;
+	padding: 30px 0;
+	margin: 0;
+	text-align: center;
+}
+
+
+/*TEST :HOVER SURT ARTICLE*/
+section article:hover {
+	background-image: url("../img/feuille.jpg");
+}
+nav ul li:hover {
+	background-image: url("../img/batman.gif");
+	background-size: cover;
+	border-radius: 40%;
+	font-size: 3em;
+
+	}
+nav ul li a:hover {
+	color: pink;
+	transition: font-size 1s ease 0s;
+	transition: color 0 ease 0;
+}

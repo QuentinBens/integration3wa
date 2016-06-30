@@ -1,0 +1,81 @@
+body {
+	background-size: 100% 1.5em;
+	background-image: -webkit-linear-gradient(#eee .05em, transparent 1px);
+	background-image: -moz-linear-gradient(#eee .05em, transparent 1px);
+	background-image: linear-gradient(#eee .05em, transparent 1px);
+	min-width: 400px;
+	width: 40%;
+	margin: auto;
+	font-family: 'cardo', serif;
+}
+h1, h2, h3 {
+	font-family: 'specialselite';
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 4em;
+	font-weight: 400;
+}
+h2 {
+	font-size: 3em;
+	font-weight: normal;	
+}
+h3::before {
+	content: "❧";
+}
+section h2 + p::first-letter {
+	font-size:2.6em;
+	float:left;
+	margin: 0;
+	padding: 0;
+	font-family: 'specialselite';
+	position:relative;
+	margin: 10 0 0 0 ;
+
+}
+figure {
+	margin: 0;
+}
+figcaption::before {
+	content: '—';
+}
+q {
+	font-style: italic;
+	width: 26.3%;
+	display: inline-block;
+}
+figcaption {
+	text-align: right;
+}
+.clear figcaption{
+	}
+.clear {
+	clear:both;
+}
+main section p {
+	margin: 40px 0px;
+	font-weight: normal;
+}
+#poivron::before {
+	content:'❧';
+	display: block;
+	text-align: center;
+	font-size: 9em;
+}
+#poivron q {
+	width: auto;
+}
+.lower::first-letter {
+	font-weight:normal;
+	font-size: 1em;
+	font-family: cardo;
+}
+
+/*footer*/
+footer p small {
+	font-family: cardo;
+}
+a {
+	text-decoration: line-through none;
+	color:black;
+}

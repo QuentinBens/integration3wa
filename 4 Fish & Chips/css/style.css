@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;/*inclus le contenant et la bordure dans le volume*/
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size:18px;
+	margin: 0;
+}
+header {
+	background-color: #25B3B4;
+	text-align: center;
+	font-size: 1.1em;
+	border: 4px solid #1B9CA2;
+	border-left: none;
+	border-right: none;
+	margin-top: 65px;
+}
+ul {
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+ul li {
+	display:inline;
+}
+ul li a{
+	color:white;
+	font-family: "Slabo 27px", serif;
+	margin: 15px;
+	float:none;
+	display:inline;
+}
+h1 {
+	font-family: "Slabo 27px";
+	font-weight: normal;
+}
+h2 {
+	font-family: "Slabo 27px";
+	font-weight: normal;
+}
+h3 {
+	font-family: "Slabo 27px";
+	font-weight: normal;
+}
+a:link {
+	text-decoration:none;
+}
+body {
+	background-image: url("../img/fond.png");
+}
+.clear {
+	clear:both;
+}
+#one {
+	text-align: center;
+	color:#4D5D64;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 100px;
+}
+#one p {
+	color:#49565F;
+}
+#two {
+	background-color: #B6DFDD;
+	text-align: center;
+	width: 62%;
+	float:left;
+	margin:auto;
+	color:#49565F;
+}
+#right {
+	float:right;
+	width: 47%;
+}
+article {
+	width: 47%;
+	float:left;
+	text-align: left;
+	padding: 0 20px;
+}
+aside {
+	float:right;
+	width: 35%;
+	background-color:#25B3B4;
+	color: white;
+	padding: 25px;
+	border: 5px solid #1B9CA2;
+	position: relative;
+}
+footer {
+	text-align: center;
+}
+main {
+	width:55%;
+	margin: auto;
+	/* overflow: hidden; remplace la fonction clear faut il faut l'ajoueter sur le parent*/
+}
+aside h3 {
+	font-size:1.5rem;
+}
+aside img {
+	position:absolute;
+	top:-50px;
+	right:-50px;
+}
+#two img {
+	border-radius: 50%;
+	float:left;
+}
+section h2 {
+	font-size: 2rem;
+}
+section h2 span {
+	color:#1B9CA2;
+	font-size: 3rem;
+	display: block;
+	margin-bottom: 35px
+}
+article h3 i {
+	color:#25B3B4;
+}
+a {
+	display: block;
+	background-color: #25B3B4;
+	float:right;
+	color:white;
+	padding: 7px;
+	margin: 30px 0 ;
+}
+article img {
+	margin: 0 10px;
+}
+article p {
+	margin: 0 10px;
+}
+section {
+	color:#49565F;
+}
+section h3 {
+	text-align: center;
+	font-size: 2rem;
+}
+/*Classe clearfix :*/
+.clearnew::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/*rem = x2 de la taille deffini par le body*/
+/*em = x2 de la taile du parent */

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/**** WITH INLINE BLOCK ****/
+#with-inline-block ul {
+	font-size: 0px;
+}
+#with-inline-block ul li {
+	display: inline-block;
+}
+/**** FIN WITH INLINE BLOCK ****/
+
+/**** WITH FLOAT ****/
+#with-float ul li {
+	float: left;
+}
+#with-float ul#float-first {
+	overflow: hidden;
+}
+#with-float ul#float-second li:last-child { /* Nécessite d'ajouter un 5ème "li", vide, dans notre liste */
+	clear: both;
+	float: none;
+}
+#with-float ul#float-third {
+	/* Rien à faire ici, car un veux rétablir le flux par le parent, en lui ajoutant une classe */
+}
+/**** FIN WITH FLOAT ****/
+
+/**** WITH FLEX ****/
+#with-flexbox ul {
+	display: flex;
+	flex-direction: row;
+}
+/**** FIN WITH FLEX ****/

@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Open Sans", Arial;
+	color:#3F4B55;
+}
+h1, h2, h3 {
+	font-family: "Courgette", cursive;
+	color: #49c2b3;
+}
+a {
+	text-decoration: none;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/*CECI EST LE HEADER*/
+header {
+	background-color: white;
+	max-width: 80%;
+	margin: auto;
+	}
+
+header nav {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	}
+
+header ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 0px 20px;
+	font-size: 1.7rem;
+	color: #49c2b3;
+	font-style: italic;
+	
+	}
+header ul li a {
+	color: #49c2b3;
+	font-family: "Courgette", cursive;
+	}
+nav ul {
+	float:right;
+	margin: 0;
+	padding: 20px 0px 0px 0px;
+}
+ul li i.fa {
+		display: block;
+		color: #49c2b3;
+}
+/*CECI EST LE MAIN §*/
+main {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+table {
+	border-collapse: collapse; /*Bordure du tableau collé*/
+	width: 100%;
+	margin: 20px 0;
+}
+tbody tr:nth-child(even) {
+	background-color: #F2F2F2;
+}
+td {
+	border: 1px solid #C0C0C0;
+	padding: 10px 0 ;
+	font-weight: bold;
+}
+tbody tr td:first-child {
+	text-align: left;
+	padding-left: 7px;
+}
+th {
+	border: 1px solid #C0C0C0;
+	background-color: #49c2b3;
+}
+a {
+	text-decoration: none;
+	color: #49c2b3;
+}
+h1 {
+	color:#3F4B55;
+	font-weight: 300;
+	margin-bottom: 35px;
+}
+h2 {
+	color: white;
+	text-align: left;
+	padding-left: 5px;
+	font-weight: 300;
+}
+/*CECI EST LE FORMULAIRE*/
+#form {
+	font-family:  "Open Sans", Arial;
+}
+section form  h3 {
+	font-family: "Courgette", cursive;
+	color: #3F4B55;
+	font-weight: 300;
+	padding: 20px 0;
+}
+form {
+	margin: 40px 0;
+}
+form input {
+	width: 47%;
+	border: none;
+	border-bottom: solid 1px #49c2b3;
+	margin: 30px 15px;
+}
+form input[type="email"] {
+	width: 98%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+form input[type="checkbox"] {
+	padding: 0;
+	margin: 30px 10px;
+	width: 2%;
+}
+form input[type="radio"] {
+	width: 2%;
+}
+section > a {
+	background-color: #49c2b3;
+	color: white;
+	padding: 10px 20px;
+}
+section > h2 {
+	text-align: center;
+	color: #3F4B55;
+	padding:20px 0 30px 0;
+	font-weight: 300;
+}
+#sondage {
+	width: 100%;
+	margin: 30px 0 0 0;
+}
+select {
+	background-color: white;
+	border: none;
+	border-bottom: solid 1px #49c2b3;
+	color:#49c2b3;
+}
+
+
+
+	/*CECI EST LE FOOTER */
+footer .promo {
+	background-color: rgb(73, 195, 180);
+	color: white;
+	padding: 30px 0;
+	margin: 30px 0 0 0 ;
+	text-align: center;
+}

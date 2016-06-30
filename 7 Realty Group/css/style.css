@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+body {
+   font-family: Arial, sans-serif;
+   color: #A49E9E ;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+/*CECI EST LE HEADER*/
+header  a:first-child {
+	display: inline-block;
+}
+header h1 {
+	display: inline-block;
+	padding-bottom: 20px;
+	overflow: hidden;
+	font-style: italic;
+}
+header > nav > ul > li {
+	display: inline-block;
+}
+header > nav > ul {
+	text-align: center;
+	list-style-position: inside;
+    border-bottom: 2px #2CBCD6 solid;
+}
+ul li a {
+	padding: 15px;
+	color:  #2CBCD6;
+	font-weight: bold;
+}
+ul li:hover a {
+	background-color: #2CBCD6;
+	color: #fff;
+}
+ul li > div {
+	display: none;
+	background-color:  #2CBCD6;
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 600px;
+	opacity: 0;
+	padding: 0 100px;
+	/*transform: scale(0);*/
+	/*transform: translateX();*/
+	/*transform: translate3d(100%);*/
+	/*animation: monAnimo 4s linear 0s 1 normal; progressive */
+
+}
+ul li:hover > div {
+	display: block;
+	opacity: 1;
+	font-size: 0;
+
+}
+ul li a {
+	color: #A49E9E ;
+}
+div > div ul {
+	list-style: none;
+
+
+}
+div > div {
+	width: 50%;
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+	margin-top: 35px;
+	color: #fff;
+}
+div > div:first-child {
+	position: relative;
+	top: 0;
+}
+div > div > ul > li a {
+	font-weight: 300;
+	opacity: 0.80;
+}
+div > div > h2 {
+	font-weight: 300;
+	opacity: 0.60;
+}
+ a:hover {
+     color: red!important;
+  }
+/*CECI SONT MES ANIM!!!!*/
+/*@keyframes monAnimo {
+	from {
+		height: 0;
+		opacity: 0;
+	}
+	to {
+		height: 400px;
+		opacity: 1;
+		background-color: red
+	}
+}
+/*opacity: 1;	*/
+	/*transform: scale(1);*/
+	/*height: 400px;*/
+	/*animation: monAnimo 2s ease-in-out 0s infinite normal;*/
+/*ceci est la description de la linge superieur
+	animation-name: monAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;*/
+
+@keyframes monAnimo {
+	0% {
+		height: 0;
+
+	}
+	100% {
+		height: 400px;
+	}
+}

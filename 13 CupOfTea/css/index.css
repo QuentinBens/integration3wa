@@ -1,0 +1,279 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+/* BODY =================================================*/
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.clear {
+	clear: both;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62,5%;
+  background-color: #F2F2F2;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 1.2rem;
+	color: #fff:
+}
+a {
+	text-decoration: none;
+  color: #fff;
+}
+/*HEADER ====================================================*/
+header {
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	padding-top: 60px;
+}
+header p {
+	display: block;
+	font-size: 0.8rem;
+	background-color: rgba(0, 0, 0, 0.1) ;
+	padding: 5px 0;
+	position:fixed;
+	width: 100%;
+	left: 0px;
+	top: -0px;
+}
+header nav {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0 30px 0;
+}
+header img {
+	margin: auto;
+}
+header > a {
+	display: block;
+	text-transform: uppercase;
+	padding-top: 20px;
+	font-size: 1.6rem;
+	color: #887534;
+	font-weight: bold;
+}
+header > a::after {
+	display: none;
+	content: '\f07a';
+}
+header nav a {
+	padding: 12px 0 12px 0;
+	text-transform: uppercase;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+/*MAIN =======================================================*/
+main {
+	width: 80%;
+	margin: auto;
+	background-color: #F2F2F2;
+}
+main section#one {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0 0 0;
+	background-color: #fff;
+	box-shadow: 3px 3px 12px #aaa;
+}
+main section#one div {
+	margin-bottom: 15px;
+	background-color: #B0C44C;
+	text-align: left;
+	padding: 15px;
+}
+main section#one div h1, p {
+	color: #fff;
+	line-height: 30px;
+}
+main section#one div h1 {
+	padding-bottom: 15px;
+	font-size: 1.4rem;
+}
+main section#one img {
+	width: 100%;
+	height: auto;
+}
+/*>>>>>>>>>>>>>>>>>>>>FIN DE SECTION #ONE <<<<<<<<<<<<<<<<*/
+main section#two {
+	text-align: center;
+	padding: 15px;
+	margin: 40px 0 0 0;
+	background-color: #fff;
+	color: #666666;
+	box-shadow: 3px 3px 12px #aaa;
+}
+main section#two h2 {
+	text-align: left;
+	font-size: 1.5rem;
+}
+main section#two h5 {
+	text-transform: uppercase;
+}
+main section#two article {
+	padding: 15px 0 15px 0;
+}
+/*>>>>>>>>>>>>>>>>>>>>FIN DE SECTION #TWO <<<<<<<<<<<<<<<<*/
+main > article {
+	text-align: center;
+	margin: 40px 0 0 0;
+	background-color: #fff;
+	box-shadow: 3px 3px 12px #aaa;
+}
+main > article h3 {
+	width: 100%;
+	font-size: 1.5rem;
+	text-align: left;
+	color: #fff;
+	background-color: #E26A6A ;
+	padding: 9px;
+}
+main > article#mid h3 {
+	background-color: #F4B350 ;
+}
+main > article:last-child h3 {
+	background-color: #4ECDC4;
+}
+main > article h3::before {
+	font-family: 'FontAwesome';
+	content: '\f0f4';
+	font-size: 1rem;
+	padding-right: 9px;
+}
+main > article h5  {
+	color: #717171;
+	font-size: 1.5rem;
+	padding: 0 0 25px 0 ;
+}
+main > article h5 a {
+	color: #717171;
+	font-size: 1.5rem;
+	padding: 0 0 25px 0 ;
+}
+main > article p {
+	color: #717171;
+	padding: 0 0 15px 0;
+}
+section#two:hover > article:not(:hover) {
+	opacity: 0.3;
+}
+/*FOOTER =======================================================*/
+footer {
+	background-color: #96B011;
+	background-image: url(../img/bg.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	color: #fff;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin: 40px 0 0 0 ;
+}
+footer section {
+	background-color: #879E0F;
+	padding: 25px 0 25px 0;
+}
+footer section ul li i.fa {
+	font-size:  2rem;
+	opacity: 0.6;
+	padding: 0 0 5px 0;
+}
+footer section ul li p {
+	text-transform: uppercase;
+	opacity: 0.6;
+	display: block;
+	padding: 0 0 20px 0;
+}
+footer nav ul li {
+	padding: 15px 0 15px 0;
+}
+footer nav ul li a {
+	opacity: 0.6;
+}
+
+/*RESPONSIVE ========================================== */
+/*@media all and (min-width: 560px)*/
+@media all and (min-width: 960px) {
+	header {
+		padding: 50px 12.5% 0 12.5%;
+		max-width: 100%;
+	}
+	header div > a::after {
+		font-family: 'FontAwesome';
+		content: '\f07a';
+		font-size: 2.3rem;
+		opacity: 0.7;
+	}
+	header > div {
+		display: flex;
+		justify-content:  space-between;
+		padding: 25px 0;
+	}
+	header nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 0 25px 0;
+	}
+	header div img {
+		margin: inherit;
+	}
+
+
+/* MAIN =========================================*/
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+main section#one {
+	position: relative;
+	width: 100%
+}
+main section#one div {
+	position: absolute;
+	top: 30px;
+	background-color: rgba(145,153,21, 0.8)
+}
+main section#two {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+main section#two h2 {
+	width: 100%;
+}
+main > article {
+	width: 31%;
+}
+
+/* FOOTER ======================================*/
+footer section ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+footer section ul li p {
+	padding: 0;
+}
+footer nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+}/*FIN DE RESPONSIVE */

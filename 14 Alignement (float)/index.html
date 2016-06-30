@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercice alignements</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/alignements.css" type="text/css" />
+</head>
+<body>
+    <h1>Consigne : Aligner les 4 "li" de chaque liste côte-à-côte</h1>
+    <p>&bkarow; Ne pas modifier la structure HTML (à 2 exceptions)<br />&bkarow; Ne modifier que la feuille CSS "alignements.css"<br />&bkarow; Ne pas ajouter de selecteur CSS dans "alignements.css", mais simplement compléter les propriétés</p>
+    <div id="with-inline-block">
+        <h2>1/ Avec "inline-block"</h2>
+        <ul>
+            <li>LI 1</li>
+            <li>LI 2</li>
+            <li>LI 3</li>
+            <li>LI 4</li>
+        </ul>
+    </div>
+    <div id="with-float">
+        <h2>2/ Avec "float", et rétablir le flux de 3 façons différentes</h2>
+        <h3>2.1 / Première méthode : en jouant sur le overflow</h3>
+        <ul id="float-first">
+            <li>LI 1</li>
+            <li>LI 2</li>
+            <li>LI 3</li>
+            <li>LI 4</li>
+        </ul>
+        <h3>2.2 / Seconde méthode : en rétablissant le flux avant de sortir du parent</h3>
+        <ul id="float-second">
+            <li>LI 1</li>
+            <li>LI 2</li>
+            <li>LI 3</li>
+            <li>LI 4</li>
+            <li></li>
+        </ul>
+        <h3>2.3 / Troisième méthode : en rétablissant le flux par le parent directement</h3>
+        <ul id="float-third" class="clearfix">
+            <li>LI 1</li>
+            <li>LI 2</li>
+            <li>LI 3</li>
+            <li>LI 4</li>
+        </ul>
+    </div>
+    <div id="with-flexbox">
+        <h2>3/ Avec "flex"</h2>
+        <ul>
+            <li>LI 1</li>
+            <li>LI 2</li>
+            <li>LI 3</li>
+            <li>LI 4</li>
+        </ul>
+    </div>
+</body>
+</html>

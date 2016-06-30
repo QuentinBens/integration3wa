@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;/*inclus le contenant et la bordure dans le volume*/
+}
+header {
+	background-color:#B8CB21;/*define color of background*/
+}
+body {
+	font-family:"verdana, sans-sherif";
+	color:#666666;
+	background-image:url("../img/fond.png");/*absolute access*/
+}
+
+h2,h3 {
+	color:#B8CB21;
+}
+
+header nav ul li {
+	display:inline;
+	margin:15px;
+}
+ul li a {
+	color:#2D4722;
+	font-size:30px;
+	font-weight:bold;
+}
+header nav ul {
+	float:right;
+	padding-top:30px;
+
+}/* float s'applique au element block (prend la largeur du contenu, valeur none, left ou right*/
+
+a:link {
+	text-decoration:none;
+}
+main {
+	background-color:white;
+}
+article {
+	background-color:white;
+	float:left;
+	width:30%;/*limite la largeur et width:calc(30% - 2px); inclus un taille dans un volum */
+	overflow:hidden;
+	border-right:1px #000 solid;
+	border-color:#A9A9A9;
+	padding:30px;
+	margin:15px 0px 15px 0px;
+}
+main #right {
+	float:right;
+	width:70%;
+	border-right:none;
+}
+article a {
+	display:block;
+	background-color:#B8CB21;
+	color:white;
+	padding:5px;
+	float:right;
+	border-radius:50px;
+	border-radius:50px;
+}
+.clear {
+	clear:both;
+}
+main article img {
+	max-width:100%;
+	max-height:auto;
+}
+article#right img{
+	float:left;
+	margin-right:4px;
+}
+footer p {
+	text-align:center;
+	margin:25px 0px 0px 0px;
+}

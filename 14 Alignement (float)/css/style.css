@@ -1,0 +1,71 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+
+/**** SURCHARGES ****/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 62.5%;
+	padding: 0;
+	margin: 0;
+}
+p {
+	font-size: 1.2rem;
+	background-color: rgba(204, 204, 204, 0.4);
+	margin: 0 0 20px 0;
+	padding: 15px;
+	color: red;
+}
+div {
+	padding: 0 15px;
+}
+h1 {
+	margin:0;
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 5px;
+	text-align: center;
+}
+h2, h3 {
+	text-decoration: underline;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+ul li {
+	padding: 5px;
+	font-size: 1.1rem;
+	color: #FFFFFF;
+	width: 25%;
+}
+ul li:nth-child(1){
+	background-color: #1B9CA2;
+}
+ul li:nth-child(2){
+	background-color: #2E6DA4;
+}
+ul li:nth-child(3){
+	background-color: #5CB85C;
+}
+ul li:nth-child(4){
+	background-color: #C0A16B;
+}
+/**** FIN SURCHARGES ****/
+
+/**** Classe CLEARFIX ****/
+/**** Permet de rétablir un flux cassé par un float. A appliquer sur le conteneur dont le flux est cassé ****/
+.clearfix::after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+/**** FIN Classe CLEARFIX ****/
